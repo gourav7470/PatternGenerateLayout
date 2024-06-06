@@ -1,0 +1,180 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  margin: 1rem;
+}
+.container .full-width-bar {
+  height: 3rem;
+  background-color: darkgray;
+  padding: 1rem;
+}
+.container .full-width-bar .circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 20px;
+}
+.container .main-content {
+  padding: 1rem;
+}
+.container .main-content > p:nth-child(2) {
+  margin-bottom: 2.5rem;
+}
+.OutputBox {
+  width: 100%;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.box-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 5rem;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.buttons > button {
+  border: unset;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label {
+  font-size: large;
+}
+.input-tags {
+  width: 100%;
+  border: 2px solid lightgray;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.input-tags::placeholder {
+  color: black;
+}
+.input-tags:focus {
+  outline-color: skyblue;
+}
+.input-field-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 5px;
+}
+textarea {
+  width: 100%;
+  height: 27.6rem;
+  border: 2px solid lightgray;
+  padding: 0.5rem;
+  border-radius: 4px;
+ 
+}
+textarea:focus {
+  outline-color: skyblue;
+}
+.search {
+  width: 100%;
+  border: 2px solid lightgray;
+  padding: 0.5rem;
+  border-radius: 4px;
+  display: inline-flex;
+  gap: 5px;
+}
+.search > input {
+  display: inline-block;
+  width: 100%;
+  border: unset;
+}
+.search > input:focus {
+  outline: unset;
+}
+.search:focus {
+  outline-color: skyblue;
+}
+.patterns {
+  margin-top: -0.9rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1px;
+}
+.patterns > span {
+  display: inline-block;
+  width: 100%;
+  border: 2px solid lightgray;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.InputBox {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+#generate_btn {
+  width: 100%;
+  background-color: #039e72;
+  color: white;
+}
+#show-code-btn {
+  background-color: #039e72;
+  color: white;
+}
+#copy-btn {
+  background-color: rgb(0, 157, 255);
+  color: white;
+}
+#clear-btn {
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+}
+
+@media (max-width: 1024px) {
+  .box-wrapper {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .InputBox {
+    width: 100%;
+  }
+  .OutputBox {
+    padding: 0;
+  }
+  .container {
+    margin: 0.5rem;
+  }
+  .container .main-content {
+    padding: 0.5rem;
+  }
+  .box-wrapper {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}

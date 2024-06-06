@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pattern Generate</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <!-- google fonts starts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+        <!-- google fonts ends -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+          <section class="full-width-bar">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+          </section>
+          <section class="main-content">
+            <h1>Generate Patterns</h1>
+            <p>Pattern generator revise your coding pattern in easy way</p>
+            <div class="box-wrapper">
+              <div class="InputBox">
+                <div class="selectPattern input-field-container">
+                  <label for="patternSelect">Select Pattern</label>
+                  <select class="input-tags" id="patternSelect">
+                    <option style="display: none;" value="">Select Name</option>
+                    <option value="rectangle">Rectangle</option>
+                    <option value="flag">flag</option>
+                    <option value="hollowrectangle">Hollowrectangle</option>
+
+                  </select>
+                </div>
+                <div class="search">
+                  <i class="fas fa-search"></i>
+                  <input type="text" id="search" placeholder="Search" />
+                </div>
+                <div class="patterns">
+                  <span>Rectangle</span>
+                  <span>Hollow Rectangle</span>
+                  <span>Triangle</span>
+                </div>
+                <div class="patternsize input-field-container">
+                  <label for="patternSize">Pattern Size</label>
+                  <input
+                    class="input-tags"
+                    type="number"
+                    id="patternSize"
+                    placeholder="Size e.g. 5"
+                    min="1"
+                  />
+                </div>
+                <div class="range input-field-container">
+                  <input class="input-tags" type="range" />
+                </div>
+                <div class="checkbox input-field-container">
+                  <div>
+                    <input type="checkbox" id="animate" />
+                    <label for="animate">Animate (seconds)</label>
+                  </div>
+                  <input
+                    class="input-tags"
+                    type="number"
+                    id="animationDelay"
+                    placeholder="Delay e.g. 0.3"
+                    min="0.1"
+                    step="0.1"
+                  />
+                </div>
+                <div class="buttons" style="width: 100%">
+                  <button id="generate_btn">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>Generate
+                  </button>
+                </div>
+              </div>
+              <div class="OutputBox">
+                <div class="input-field-container">
+                  <label for="output">Pattern</label>
+                  <textarea name="output" id="output">
+
+                  </textarea>
+                </div>
+                <div class="buttons">
+                  <div class="buttons">
+                    <button id="copy-btn">
+                      <i class="fa-solid fa-copy"></i>Copy
+                    </button>
+                    <button id="show-code-btn">
+                      <i class="fa-solid fa-code"></i>Show Code
+                    </button>
+                  </div>
+                  <button id="clear-btn">
+                    <i class="fa-solid fa-trash"></i>Clear
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <script src="script.js"></script>
+      </body>
+</html>
